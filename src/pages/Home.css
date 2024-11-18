@@ -1,0 +1,27 @@
+.homepage-container {
+  height: 100vh;
+  position: relative;
+  background-image: url("../assets/LibraryApp.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(5px); /* Sadece arka plan bulanık olacak */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Yazı rengi */
+  z-index: 1; /* İçerik üstte olsun */
+}
+
+h2,
+h6 {
+  z-index: 2; /* Yazılar blur efektten etkilenmez */
+  color: white; /* Yazı rengi */
+}

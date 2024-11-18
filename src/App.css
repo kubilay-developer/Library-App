@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #bebdbd;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* Sayfayı yatayda ortalar */
+  padding: 1rem; /* Sayfanın kenarlarında boşluk sağlar */
+  text-align: center; /* İçeriği ortalar */
+}
+
+.site-title {
+  font-size: 3rem;
+}
+
+.nav {
+  background-color: #c9842b;
+  color: #ffffff; /* Beyaz metin */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  color: #ffffff; /* Linklerin rengi beyaz */
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+
+.nav li.active {
+  background-color: #2a3b4c; /* Aktif link arkaplanı daha açık bir ton */
+}
+
+.nav li:hover {
+  background-color: #3b4c63; /* Hover durumu için altın sarısı */
+}
